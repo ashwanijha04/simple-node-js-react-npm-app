@@ -12,5 +12,11 @@ pipeline {
                 sh 'npm run build'
             }
         }
+
+        stage('Post-Build') {
+            steps {
+                sh 'npm run build'
+            }
+        }
     }
 }
