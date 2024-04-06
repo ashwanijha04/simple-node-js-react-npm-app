@@ -13,9 +13,10 @@ pipeline {
             }
         }
 
-        stage('Post-Build') {
+        stage('Deploy') {
             steps {
-                sh 'npm run build'
+                echo 'Build successfully completed'
+                echo 'Deploying the Code'
             }
         }
     }
